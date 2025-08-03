@@ -1,5 +1,4 @@
-function reverseString(str) {
+function reverseString(str){
   return str.split('').reverse().join('');
 }
-
-console.log(reverseString("hello")); // Output: "olleh"
+console.log(reverseString("World!")); // Output: !dlroW

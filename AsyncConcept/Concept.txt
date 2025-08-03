@@ -1,0 +1,64 @@
+1:-  Sync and Async Kya hot hai
+--> Sync matlab ek ke baad dusra hoga, Jabtak ek command complete na ho dusra suru nhi hoga.
+
+task a - 5 sec
+task b - 2 sec
+task c - 15 sec
+task d - 1 sec
+
+--> Async matlab sare kaam ek sath suru kar do, jiska answer pehele aajaye uska jawab dedena
+
+2:-  Kase pata chalta hai hum sync code likh rahe hai ya Async
+ setTimeout
+ setInterval
+ promises
+ fetch
+ axios
+ XMLHttpsRequest
+to ye Async code hai...
+
+
+
+Sync code:-  
+Console.log(1);
+console.log(2);
+console.log(3);
+console.log(4); 
+iska output mainkahi v   axios, setTimeout, setInterval, promises, fetch, XMLHttpsRequest nhi hai to ye Sync code hai or iska output jo 
+hai wo ek ke baad dusra aayega.
+o/p:- 1,2,3,4
+
+3:- Async js ky hai?
+--> kai baar aapka code depended hot hai kisi or ke server par, is case mein humein nhi pata hota ki answer kab uske serverse kab laut ke aayega
+to hum kya nhi kar skte is writing sync code, isse nipatne ke liye hum log async code likh dete hai taaki blocking naa ho and jab bhi answer aaye
+humare answer ke respect main chalne wala code chal jaaye
+
+Async code ka main motive hota hai ki un case main jinmein hume pata nhi code ka answer kitni der main aayega to jab bhi answer aa jaye uske answer
+ke respect main koi particular code chala dedena
+demo:- facebook se phot laao aurr jab photo aajaye show kar dena. 
+
+4:- js ke puri kahani :-
+ Main stack or Side stack mai hota hai agar hmare pass 4 task hai or 3rd task humara async hai to 1,2,4 pehle main stack mai 
+jayega or 3 wala side stack mai jayega... pehle kya hog ki 1, 2, 4 chlega uska output aayega fir side stack ko dekha jyega ke waha koi code to 
+nhi hai agar hai to usko run kar diya jayega..... To humar fianl output jo haia wo hoga,,, 1, 2, 4, or fir 3
+
+5:- Single and multi threading 
+:- Agar ek kaam ek sath mai ho raha to wo single threaded code hai agar waha do kaam ek sth hot to wo multi threaded kahlata
+
+6:- callback
+fetch
+axios
+promises
+setTimeout
+setInterval    :- ye sab async ka code hai jisse hum request bejte hai
+
+then catch
+callback
+async await    :- jab complete ho jata hai to hum ye use karte hai
+
+callback humesa ek function hota hai, ye sirf tab chalta hai jab async code ka completion ho jata hai
+
+
+
+
+
